@@ -1,37 +1,28 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //components
 import Header from './components/Header';
-import Listpage from './components/List';
+import Homepage from './components/Homepage';
+import Livepage from './components/Livepage';
+import Page404 from './components/404page';
+//import Listpage from './components/List';
 
-class App extends React.Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeHeader: false
-    }
-  }
-
-  activeButton() {
-    this.setState({ activeHeader: true });
-  }
-
-
+class App extends Component {
   render() {
+    console.log('ccc..');
     return (
-      <div className="App">
-        <Header />
-        <button onClick={() => this.activeButton()}>Active</button>
-        {this.state.activeHeader ?
-          (<Listpage />)
-          :
-          null
-        }
-
+      <div>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/canli-yayin" component={Livepage} />
+            <Route path="*" component={Page404} />
+          </Switch>
+        </BrowserRouter>
       </div>
-    )
+    );
   }
 }
 

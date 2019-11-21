@@ -4,6 +4,7 @@ class Category(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=250)
     description = models.CharField(max_length=500)
+    url = models.CharField(max_length=250, default='')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

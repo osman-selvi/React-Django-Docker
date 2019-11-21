@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -29,15 +30,17 @@ class Header extends Component {
             return <div>loading</div>
         }
 
+        console.log(this.state.headerData)
+
         return (
             <div>
                 <ul>
                     {this.state.headerData.map((item) => {
                         return (
-                            <li key={item.id}>{item.title}</li>
+                            <li key={item.id}><Link to={item.url}>{item.title}</Link></li>
                         )
                     })}
-                    <p>{this.state.name}</p>
+
                 </ul>
             </div>
         );

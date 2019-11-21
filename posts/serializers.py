@@ -4,7 +4,7 @@ from .models import Post, Category
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('id', 'title', 'description', 'created_at', 'updated_at')
+        fields = ('id', 'title', 'description', 'url', 'created_at', 'updated_at')
 
 class PostSerializer(serializers.ModelSerializer):
     category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())
