@@ -6,7 +6,7 @@ services:
     volumes:
       - database:/var/lib/postgresql/data/
     ports:
-      - 5433:5432
+      - 5434:5432
     env_file:
       - .env
   web:
@@ -15,7 +15,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - 80:8000
+      - 8989:8000
     depends_on:
       - database
     entrypoint: /entrypoint.sh
