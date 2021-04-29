@@ -1,0 +1,44 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $font-family-base;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+input,
+button {
+  outline-width: 0;
+  outline: none;
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+#chart-container {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  height: 420px;
+  width: calc(100% - 24px);
+  border: 2px dashed #aaa;
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+// custom svgs
+.custom-svg {
+  width: 20px;
+  height: 20px;
+}

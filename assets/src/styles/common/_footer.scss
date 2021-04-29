@@ -1,0 +1,127 @@
+.footer {
+  position: fixed;
+  background: #f2f2f2;
+  border: none;
+  overflow: scroll;
+  height: 100%;
+  padding: 45px 0 0;
+  border-bottom: 4px solid #fe672e;
+  bottom: -95%;
+  &.show {
+    bottom: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    overflow: hidden;
+    padding: 0;
+    height: 45px;
+    bottom: 0;
+    &.show {
+      height: 280px;
+    }
+  }
+
+  .field-name {
+    color: #ff672d;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
+  }
+
+  .footer-fields {
+    overflow: hidden;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid #c7c7c7;
+      margin-bottom: 0;
+      min-height: 270px;
+      &.last {
+        border-right: none;
+        .item-select {
+          width: 100% !important;
+        }
+      }
+    }
+    &-item {
+      margin-bottom: 20px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 10px;
+      }
+      .form-group {
+        label {
+          background: #fff;
+          padding: 2px 10px;
+          border-radius: 5px;
+          font-size: 14px;
+          color: #9d9d9d;
+          min-width: 28%;
+          @include media-breakpoint-up(lg) {
+            width: auto;
+          }
+        }
+        .item-select {
+          height: 28px;
+          min-width: 150px;
+          background: #ebebeb;
+          border-radius: 0;
+          border: none;
+          color: #9d9d9d;
+          font-weight: 700;
+          width: 100%;
+          font-size: 12px;
+          @include media-breakpoint-up(lg) {
+            width: 60%;
+          }
+        }
+      }
+    }
+    .icon-area {
+      padding: 5px 0;
+      min-height: 180px;
+      a {
+        padding-bottom: 25px;
+        position: relative;
+        display: block;
+        font-weight: 700;
+        &.active,
+        &:hover {
+          color: #ff672d;
+          svg {
+            use {
+              fill: #ff672d;
+            }
+          }
+        }
+        svg {
+          margin-top: -5px;
+          margin-right: 5px;
+          use {
+            fill: #71748d;
+          }
+        }
+      }
+    }
+  }
+
+  .collapse-footer-button {
+    position: absolute;
+    left: 18px;
+    top: 5px;
+    background: #fe672e;
+    border: none;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+    &.show {
+      transform: rotate(180deg);
+    }
+  }
+}

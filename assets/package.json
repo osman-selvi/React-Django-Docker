@@ -1,34 +1,46 @@
 {
-  "name": "drf-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "react-router-dom": "^5.1.2"
-  }
+	"name": "travelo",
+	"version": "1.0.0",
+	"description": "Travelo",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.4.4",
+		"@babel/preset-env": "^7.6.3",
+		"babelify": "^10.0.0",
+		"browserify": "^16.2.3",
+		"chalk": "^2.4.1",
+		"event-stream": "^4.0.1",
+		"glob": "^7.1.3",
+		"gulp": "^4.0.1",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^5.0.3",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.2.3",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify": "^3.0.0",
+		"node-sass": "^4.12.0",
+		"orgchart": "^2.1.9",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.6.0",
+		"@fortawesome/fontawesome-free": "^5.8.1",
+		"bootstrap": "^4.1.1",
+		"core-js": "^3.3.3",
+		"domready": "^1.0.8",
+		"form-serializer": "^2.5.0",
+		"jquery": "^3.4.1",
+		"jquery-validation": "^1.19.1",
+		"regenerator-runtime": "^0.13.3",
+		"whatwg-fetch": "^3.0.0"
+	},
+	"browserslist": "> 0.25%, not dead"
 }

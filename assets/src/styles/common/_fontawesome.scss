@@ -1,0 +1,64 @@
+$fa-font-path: "../fonts";
+
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/variables";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/mixins";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/core";
+
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+@include fontawesomelist(
+  (
+    play: $fa-var-play,
+    times: $fa-var-times,
+    chevron-right: $fa-var-chevron-right,
+    chevron-left: $fa-var-chevron-left,
+    chevron-down: $fa-var-chevron-down,
+    chevron-up: $fa-var-chevron-up,
+    long-arrow-alt-right: $fa-var-long-arrow-alt-right,
+    search: $fa-var-search,
+    facebook: $fa-var-facebook,
+    twitter: $fa-var-twitter,
+    instagram: $fa-var-instagram,
+    youtube: $fa-var-youtube,
+    google-play: $fa-var-google-play,
+    apple: $fa-var-apple,
+    clock: $fa-var-clock,
+    chart-line: $fa-var-chart-line,
+    sort-amount-down: $fa-var-sort-amount-down,
+    sort-amount-up: $fa-var-sort-amount-up,
+    share-square: $fa-var-share-square,
+    bookmark: $fa-var-bookmark,
+    copy: $fa-var-copy,
+    code: $fa-var-code,
+    calendar-alt: $fa-var-calendar-alt,
+    external-link-alt: $fa-var-external-link-alt,
+    ellipsis-h: $fa-var-ellipsis-h,
+    ellipsis-v: $fa-var-ellipsis-v,
+    home: $fa-var-home,
+    check-circle: $fa-var-check-circle,
+    cogs: $fa-var-cogs,
+    cloud-upload-alt: $fa-var-cloud-upload-alt,
+    plus-circle: $fa-var-plus-circle,
+    caret-down: $fa-var-caret-down,
+    caret-up: $fa-var-caret-up,
+    newspaper: $fa-var-newspaper,
+    images: $fa-var-images,
+    user: $fa-var-user,
+    arrow-right: $fa-var-arrow-right,
+    check: $fa-var-check,
+    exclamation: $fa-var-exclamation,
+    exclamation-circle: $fa-var-exclamation-circle,
+    cog: $fa-var-cog,
+    plus: $fa-var-plus,
+    redo: $fa-var-redo,
+    print: $fa-var-print,
+    file-pdf: $fa-var-file-pdf,
+    bar-chart: $fa-var-chart-bar,
+    sitemap: $fa-var-sitemap,
+    phone: $fa-var-phone,
+    envelope: $fa-var-envelope,
+  )
+);

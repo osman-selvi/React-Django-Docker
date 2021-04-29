@@ -1,0 +1,48 @@
+.orgchart { 
+  background: #fff; 
+  
+  td {
+    &.leftLine, 
+    &.rightLine, 
+    &.topLine,
+    &.downLine {
+      border-color: #aaa;
+    }
+  
+    .middle-level {
+      .title,
+      .content {
+        background: rgba(0, 152, 153, 0.5);
+      }
+    }
+
+    .product-dept {
+      .title,
+      .content {
+        background: rgba(0, 153, 51, 0.5);
+      }
+    }
+
+    .rd-dept {
+      .title,
+      .content {
+        background: rgba(153, 51, 102, 0.5);
+      }
+    }
+
+    .pipeline1 {
+      .title,
+      .content {
+        background: rgba(153, 102, 51, 0.5);
+      }
+    }
+
+    .frontend1 {
+      .title,
+      .content {
+        background: rgba(204, 0, 102, 0.5);
+      }
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+.alan-hesaplama {
+    text-align: center;
+    .dik {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    .yatay {
+        display: inline-block;
+        float: left;
+    }
+
+
+    .card {
+        border: 1px solid #e2e2e2;
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+    }
+}

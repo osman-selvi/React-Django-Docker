@@ -1,0 +1,21 @@
+@mixin line-clamp($count) {
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+    white-space: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $count;
+}
+
+
+@mixin fontawesomelist($iconList) { // (angle-down:$fa-var-angle-down)
+    @each $iconName, $iconVar in $iconList {
+        .#{$fa-css-prefix}-#{$iconName} { //.fa-angle-down
+            &:before {
+                content: fa-content($iconVar);
+            }
+        }
+    }
+}
